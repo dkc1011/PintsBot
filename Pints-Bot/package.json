@@ -1,0 +1,17 @@
+{
+  "name": "testwebhooks",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "stable": "^0.1.8"
+  }
+}
