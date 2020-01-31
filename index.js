@@ -1,4 +1,5 @@
 const request = require('request-promise');
+var SlackBot = require('slackbots');
 
 const hook = 'TTB5LAL8M/BTDBCNJCX/1bqaK4Kvz1TCPsEcvWk0Ii98';
 const hook2 = 'TTB5LAL8M/BT00ECMS6/E3v2VpvwbCFKGecjDK1zTpB6';
@@ -40,12 +41,12 @@ const getData = async function()
             json : true
         });
 
-        console.log(res);
+    //     console.log(res);
 
-    } catch(e)
-    {
-        console.log('error', e);
-    }
+    // } catch(e)
+    // {
+    //     console.log('error', e);
+    // }
 
     debugger;
 })();
