@@ -32,12 +32,6 @@ const getData = async function()
         };
 
         //slackpost
-        const res = await request({
-            url: `https://hooks.slack.com/services/${hook}`,
-            method: 'POST',
-            body: slackBody,
-            json : true
-        });
 
         const res = await request({
             url: `https://hooks.slack.com/services/${hook2}`,
