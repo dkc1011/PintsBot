@@ -1,6 +1,7 @@
 const request = require('request-promise');
 
 const hook = 'TTB5LAL8M/BTDBCNJCX/1bqaK4Kvz1TCPsEcvWk0Ii98';
+const hook2 = 'TTB5LAL8M/BT00ECMS6/E3v2VpvwbCFKGecjDK1zTpB6';
 
 const getData = async function()
 {
@@ -33,6 +34,13 @@ const getData = async function()
         //slackpost
         const res = await request({
             url: `https://hooks.slack.com/services/${hook}`,
+            method: 'POST',
+            body: slackBody,
+            json : true
+        });
+
+        const res = await request({
+            url: `https://hooks.slack.com/services/${hook2}`,
             method: 'POST',
             body: slackBody,
             json : true
